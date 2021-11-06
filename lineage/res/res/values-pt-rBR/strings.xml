@@ -2,6 +2,7 @@
 <!--
      Copyright (C) 2015 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2021 The Nenggala Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -16,15 +17,15 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageos_system_label">Sistema LineageOS</string>
+    <string name="lineageos_system_label">Sistema Nenggala</string>
     <string name="permlab_modifyProfiles">modificar os perfis de sistema</string>
     <string name="permdesc_modifyProfiles">Permite que um aplicativo modifique os perfis de sistema.</string>
     <string name="permlab_useHardwareFramework">usar o framework do hardware</string>
-    <string name="permdesc_useHardwareFramework">Permite que um aplicativo acesse a estrutura de hardware do sistema Lineage.</string>
-    <string name="permlab_writeSettings">modificar as configurações do sistema Lineage</string>
-    <string name="permdesc_writeSettings">Permite que um aplicativo modifique as configurações do sistema Lineage.</string>
-    <string name="permlab_writeSecureSettings">modificar as configurações seguras do sistema Lineage</string>
-    <string name="permdesc_writeSecureSettings">Permite que um aplicativo modifique as configurações do sistema seguro Lineage. Não é utilizado por aplicativos normais.</string>
+    <string name="permdesc_useHardwareFramework">Permite que um aplicativo acesse a estrutura de hardware do sistema Nenggala.</string>
+    <string name="permlab_writeSettings">modificar as configurações do sistema Nenggala</string>
+    <string name="permdesc_writeSettings">Permite que um aplicativo modifique as configurações do sistema Nenggala.</string>
+    <string name="permlab_writeSecureSettings">modificar as configurações seguras do sistema Nenggala</string>
+    <string name="permdesc_writeSecureSettings">Permite que um aplicativo modifique as configurações do sistema seguro Nenggala. Não é utilizado por aplicativos normais.</string>
     <string name="permlab_protectedApp">adicionar e remover aplicativos aos protegidos</string>
     <string name="permdesc_protectedApp">Permite que um aplicativo marque outros aplicativos como protegidos e os bloqueie.</string>
     <string name="profileNameDefault">Padrão</string>

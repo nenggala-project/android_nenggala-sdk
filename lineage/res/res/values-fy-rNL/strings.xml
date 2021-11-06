@@ -2,6 +2,7 @@
 <!--
      Copyright (C) 2015 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2021 The Nenggala Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -16,15 +17,15 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageos_system_label">LineageOS-systeem</string>
+    <string name="lineageos_system_label">Nenggala-systeem</string>
     <string name="permlab_modifyProfiles">systeemprofilen wizigje</string>
     <string name="permdesc_modifyProfiles">Hjirmei kin de app systeemprofilen wizigje.</string>
     <string name="permlab_useHardwareFramework">hardware-framework brûke</string>
-    <string name="permdesc_useHardwareFramework">Hjirmei kin de app tagong krije ta it hardware-framework fan Lineage.</string>
-    <string name="permlab_writeSettings">Lineage-systeemynstellingen wizigje</string>
-    <string name="permdesc_writeSettings">Hjirmei kin de app de systeemynstellingen fan Lineage wizigje.</string>
-    <string name="permlab_writeSecureSettings">befeiligege Lineage-systeemynstellingen wizigje</string>
-    <string name="permdesc_writeSecureSettings">Hjirmei kin de app de befeilige systeemynstellingen fan Lineage wizigje. Net foar gebrûk troch normale apps.</string>
+    <string name="permdesc_useHardwareFramework">Hjirmei kin de app tagong krije ta it hardware-framework fan Nenggala.</string>
+    <string name="permlab_writeSettings">Nenggala-systeemynstellingen wizigje</string>
+    <string name="permdesc_writeSettings">Hjirmei kin de app de systeemynstellingen fan Nenggala wizigje.</string>
+    <string name="permlab_writeSecureSettings">befeiligege Nenggala-systeemynstellingen wizigje</string>
+    <string name="permdesc_writeSecureSettings">Hjirmei kin de app de befeilige systeemynstellingen fan Nenggala wizigje. Net foar gebrûk troch normale apps.</string>
     <string name="permlab_protectedApp">tafoegje en fuortsmiten fan apps oan beskerme apps</string>
     <string name="permdesc_protectedApp">Hjirmei kin de app oare apps as beskerme oanmerke en beskoattelje.</string>
     <string name="profileNameDefault">Standert</string>
@@ -91,9 +92,9 @@
     <string name="permlab_manageRemotePrefs">ynstellingen foar behear op ôfstân</string>
     <string name="permdesc_manageRemotePrefs">Hjirmei kin de app ynstellingen foar behear op ôfstân beheare</string>
     <string name="build_date">Build-datum</string>
-    <string name="lineage_api_level">LineageOS-API-Nivo</string>
-    <string name="lineage_updates">LineageOS-fernijingen</string>
-    <string name="lineage_version">LineageOS-ferzje</string>
+    <string name="lineage_api_level">Nenggala-API-Nivo</string>
+    <string name="lineage_updates">Nenggala-fernijingen</string>
+    <string name="lineage_version">Nenggala-ferzje</string>
     <string name="lineage_vendor_security_patch">Leveransiers-befeiligingspatch-nivo</string>
     <string name="unknown">Unbekend</string>
     <string name="app_killed_message">App ôfsluten</string>

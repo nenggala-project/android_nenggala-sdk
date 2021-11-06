@@ -2,6 +2,7 @@
 <!--
      Copyright (C) 2015 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2021 The Nenggala Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -16,15 +17,15 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageos_system_label">LineageOS ವ್ಯವಸ್ಥೆ</string>
+    <string name="lineageos_system_label">Nenggala ವ್ಯವಸ್ಥೆ</string>
     <string name="permlab_modifyProfiles">ವ್ಯವಸ್ಥೆಯ ರೇಖಾಕೃತಿಗಳನ್ನು ಮಾರ್ಪಡಿಸು</string>
     <string name="permdesc_modifyProfiles">ವ್ಯವಸ್ಥೆಯ ರೇಖಾಕೃತಿಗಳನ್ನು ಮಾರ್ಪಡಿಸಲು ಒಂದು ಆಪ್ಗೆ ಅನುಮತಿಸುತ್ತದೆ.</string>
     <string name="permlab_useHardwareFramework">ಹಾರ್ಡ್‍ವೇರ್ ಫ್ರೇಮ್‍ವರ್ಕ್ ಉಪಯೋಗಿಸು</string>
-    <string name="permdesc_useHardwareFramework">Lineage ಯಂತ್ರಾಂಶ ಚೌಕಟ್ಟನ್ನು ಬಳಸಲು ಅಪ್ಗೆ ಅನುಮತಿಸುತ್ತದೆ.</string>
-    <string name="permlab_writeSettings">Lineage ವ್ಯವಸ್ಥೆಯ ಅಳವಡಿಕೆಗಳನ್ನು ಮಾರ್ಪಡಿಸು</string>
-    <string name="permdesc_writeSettings">Lineage ವ್ಯವಸ್ಥೆಯ ಅಳವಡಿಕೆಗಳನ್ನು ಮಾರ್ಪಡಿಸಲು ಆಪ್ಗೆ ಅನುಮತಿಸುತ್ತದೆ.</string>
-    <string name="permlab_writeSecureSettings">Lineage ವ್ಯವಸ್ಥೆಯ ಸುರಕ್ಷಿತ ಅಳವಡಿಕೆಗಳನ್ನು ಮಾರ್ಪಡಿಸು</string>
-    <string name="permdesc_writeSecureSettings">Lineage ವ್ಯವಸ್ಥೆಯ ಸುರಕ್ಷಿತ ಅಳವಡಿಕೆಗಳನ್ನು ಮಾರ್ಪಡಿಸಲು ಆಪ್ಗೆ ಅನುಮತಿಸುತ್ತದೆ. ಸಾಮಾನ್ಯ ಆಪ್ಗಳ ಬಳಕೆಗೆ ಅಲ್ಲ.</string>
+    <string name="permdesc_useHardwareFramework">Nenggala ಯಂತ್ರಾಂಶ ಚೌಕಟ್ಟನ್ನು ಬಳಸಲು ಅಪ್ಗೆ ಅನುಮತಿಸುತ್ತದೆ.</string>
+    <string name="permlab_writeSettings">Nenggala ವ್ಯವಸ್ಥೆಯ ಅಳವಡಿಕೆಗಳನ್ನು ಮಾರ್ಪಡಿಸು</string>
+    <string name="permdesc_writeSettings">Nenggala ವ್ಯವಸ್ಥೆಯ ಅಳವಡಿಕೆಗಳನ್ನು ಮಾರ್ಪಡಿಸಲು ಆಪ್ಗೆ ಅನುಮತಿಸುತ್ತದೆ.</string>
+    <string name="permlab_writeSecureSettings">Nenggala ವ್ಯವಸ್ಥೆಯ ಸುರಕ್ಷಿತ ಅಳವಡಿಕೆಗಳನ್ನು ಮಾರ್ಪಡಿಸು</string>
+    <string name="permdesc_writeSecureSettings">Nenggala ವ್ಯವಸ್ಥೆಯ ಸುರಕ್ಷಿತ ಅಳವಡಿಕೆಗಳನ್ನು ಮಾರ್ಪಡಿಸಲು ಆಪ್ಗೆ ಅನುಮತಿಸುತ್ತದೆ. ಸಾಮಾನ್ಯ ಆಪ್ಗಳ ಬಳಕೆಗೆ ಅಲ್ಲ.</string>
     <string name="permlab_protectedApp">ಸಂರಕ್ಷಿತ ಪಟ್ಟಿಗೆ ಆಪ್ಗಳನ್ನು ಸೇರಿಸು ಮತ್ತು ಅಳಿಸು</string>
     <string name="permdesc_protectedApp">ಇತರ ಆಪ್ಗಳನ್ನು ರಕ್ಷಿಸಲು ಮತ್ತು ಅವುಗಳನ್ನು ಲಾಕ್‌ ಮಾಡಲು ಒಂದು ಆಪ್ಗೆ ಅನುಮತಿಸುತ್ತದೆ.</string>
     <string name="profileNameDefault">ಇದ್ದಾಯ್ಕೆ</string>
@@ -91,9 +92,9 @@
     <string name="permlab_manageRemotePrefs">ಗೆಂಟಂಕೆಯ ಅಳವಡಿಕೆಗಳನ್ನು ನಿರ್ವಹಿಸು</string>
     <string name="permdesc_manageRemotePrefs">ಗೆಂಟಂಕೆ ಅಳವಡಿಕೆಗಳನ್ನು ನಿರ್ವಹಿಸಲು ಅಪ್ಗೆ ಅನುಮತಿಸುತ್ತದೆ</string>
     <string name="build_date">ನಿರ್ಮಾಣ ದಿನಾಂಕ</string>
-    <string name="lineage_api_level">LineageOS API ಮಟ್ಟ</string>
-    <string name="lineage_updates">LineageOS ನವೀಕರಣಗಳು</string>
-    <string name="lineage_version">LineageOS ಆವೃತ್ತಿ</string>
+    <string name="lineage_api_level">Nenggala API ಮಟ್ಟ</string>
+    <string name="lineage_updates">Nenggala ನವೀಕರಣಗಳು</string>
+    <string name="lineage_version">Nenggala ಆವೃತ್ತಿ</string>
     <string name="lineage_vendor_security_patch">Android ಭದ್ರತಾ ತೇಪೆ ಮಟ್ಟ</string>
     <string name="unknown">ಅಜ್ಞಾತ</string>
     <string name="app_killed_message">ತಂತ್ರಾಂಶ ಸತ್ತಿತು</string>
