@@ -112,7 +112,7 @@ public class LineageWeatherManager {
         if (sWeatherManagerService != null) {
             return sWeatherManagerService;
         }
-        IBinder binder = ServiceManager.getService(LineageContextConstants.LINEAGE_WEATHER_SERVICE);
+        IBinder binder = ServiceManager.getService(LineageContextConstants.NENGGALA_WEATHER_SERVICE);
         if (binder != null) {
             sWeatherManagerService = ILineageWeatherManager.Stub.asInterface(binder);
             return sWeatherManagerService;

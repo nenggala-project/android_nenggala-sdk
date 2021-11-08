@@ -120,7 +120,7 @@ public class PerformanceManager {
         if (sService != null) {
             return sService;
         }
-        IBinder b = ServiceManager.getService(LineageContextConstants.LINEAGE_PERFORMANCE_SERVICE);
+        IBinder b = ServiceManager.getService(LineageContextConstants.NENGGALA_PERFORMANCE_SERVICE);
         if (b != null) {
             sService = IPerformanceManager.Stub.asInterface(b);
             return sService;

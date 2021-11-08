@@ -186,7 +186,7 @@ public class LineageHardwareService extends LineageSystemService {
     @Override
     public void onBootPhase(int phase) {
         if (phase == PHASE_BOOT_COMPLETED) {
-            Intent intent = new Intent(lineageos.content.Intent.ACTION_INITIALIZE_LINEAGE_HARDWARE);
+            Intent intent = new Intent(lineageos.content.Intent.ACTION_INITIALIZE_NENGGALA_HARDWARE);
             intent.addFlags(Intent.FLAG_RECEIVER_FOREGROUND);
             mContext.sendBroadcastAsUser(intent, UserHandle.ALL,
                     lineageos.platform.Manifest.permission.HARDWARE_ABSTRACTION_ACCESS);
@@ -195,7 +195,7 @@ public class LineageHardwareService extends LineageSystemService {
 
     @Override
     public void onStart() {
-        publishBinderService(LineageContextConstants.LINEAGE_HARDWARE_SERVICE, mService);
+        publishBinderService(LineageContextConstants.NENGGALA_HARDWARE_SERVICE, mService);
     }
 
     private final IBinder mService = new ILineageHardwareService.Stub() {

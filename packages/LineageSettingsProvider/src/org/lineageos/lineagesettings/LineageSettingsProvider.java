@@ -61,7 +61,7 @@ public class LineageSettingsProvider extends ContentProvider {
 
     private static final boolean USER_CHECK_THROWS = true;
 
-    public static final String PREF_HAS_MIGRATED_LINEAGE_SETTINGS =
+    public static final String PREF_HAS_MIGRATED_NENGGALA_SETTINGS =
             "migrated_settings_to_lineage_17_0";
 
     private static final Bundle NULL_SETTING = Bundle.forPair("value", null);
@@ -146,7 +146,7 @@ public class LineageSettingsProvider extends ContentProvider {
      * Migrates Lineage settings for all existing users if this has not been run before.
      */
     private void migrateLineageSettingsForExistingUsersIfNeeded() {
-        boolean hasMigratedLineageSettings = mSharedPrefs.getBoolean(PREF_HAS_MIGRATED_LINEAGE_SETTINGS,
+        boolean hasMigratedLineageSettings = mSharedPrefs.getBoolean(PREF_HAS_MIGRATED_NENGGALA_SETTINGS,
                 false);
 
         if (!hasMigratedLineageSettings) {
@@ -159,7 +159,7 @@ public class LineageSettingsProvider extends ContentProvider {
                 migrateLineageSettingsForUser(user.id);
             }
 
-            mSharedPrefs.edit().putBoolean(PREF_HAS_MIGRATED_LINEAGE_SETTINGS, true).commit();
+            mSharedPrefs.edit().putBoolean(PREF_HAS_MIGRATED_NENGGALA_SETTINGS, true).commit();
 
             // TODO: Add this as part of a boot message to the UI
             long timeDiffMillis = System.currentTimeMillis() - startTime;
@@ -859,11 +859,11 @@ public class LineageSettingsProvider extends ContentProvider {
         String property = null;
         final boolean isGlobal = tableName.equals(LineageDatabaseHelper.LineageTableNames.TABLE_GLOBAL);
         if (tableName.equals(LineageDatabaseHelper.LineageTableNames.TABLE_SYSTEM)) {
-            property = LineageSettings.System.SYS_PROP_LINEAGE_SETTING_VERSION;
+            property = LineageSettings.System.SYS_PROP_NENGGALA_SETTING_VERSION;
         } else if (tableName.equals(LineageDatabaseHelper.LineageTableNames.TABLE_SECURE)) {
-            property = LineageSettings.Secure.SYS_PROP_LINEAGE_SETTING_VERSION;
+            property = LineageSettings.Secure.SYS_PROP_NENGGALA_SETTING_VERSION;
         } else if (isGlobal) {
-            property = LineageSettings.Global.SYS_PROP_LINEAGE_SETTING_VERSION;
+            property = LineageSettings.Global.SYS_PROP_NENGGALA_SETTING_VERSION;
         }
 
         if (property != null) {

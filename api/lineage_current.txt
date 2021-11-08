@@ -303,13 +303,13 @@ package lineageos.os {
     field public static final java.lang.String UNKNOWN = "unknown";
   }
 
-  public static class Build.LINEAGE_VERSION {
-    ctor public Build.LINEAGE_VERSION();
+  public static class Build.NENGGALA_VERSION {
+    ctor public Build.NENGGALA_VERSION();
     field public static final int SDK_INT;
   }
 
-  public static class Build.LINEAGE_VERSION_CODES {
-    ctor public Build.LINEAGE_VERSION_CODES();
+  public static class Build.NENGGALA_VERSION_CODES {
+    ctor public Build.NENGGALA_VERSION_CODES();
     field public static final int APRICOT = 1; // 0x1
     field public static final int BOYSENBERRY = 2; // 0x2
     field public static final int CANTALOUPE = 3; // 0x3
@@ -742,7 +742,7 @@ package lineageos.providers {
     method public static boolean putLong(android.content.ContentResolver, java.lang.String, long);
     method public static boolean putString(android.content.ContentResolver, java.lang.String, java.lang.String);
     field public static final android.net.Uri CONTENT_URI;
-    field public static final java.lang.String SYS_PROP_LINEAGE_SETTING_VERSION = "sys.lineage_settings_global_version";
+    field public static final java.lang.String SYS_PROP_NENGGALA_SETTING_VERSION = "sys.lineage_settings_global_version";
     field public static final java.lang.String WEATHER_TEMPERATURE_UNIT = "weather_temperature_unit";
   }
 
@@ -766,7 +766,7 @@ package lineageos.providers {
     method public static boolean putLong(android.content.ContentResolver, java.lang.String, long);
     method public static boolean putString(android.content.ContentResolver, java.lang.String, java.lang.String);
     field public static final android.net.Uri CONTENT_URI;
-    field public static final java.lang.String SYS_PROP_LINEAGE_SETTING_VERSION = "sys.lineage_settings_secure_version";
+    field public static final java.lang.String SYS_PROP_NENGGALA_SETTING_VERSION = "sys.lineage_settings_secure_version";
     field public static final deprecated java.lang.String TRUST_NOTIFICATIONS = "trust_notifications";
     field public static final java.lang.String TRUST_WARNINGS = "trust_warnings";
   }
@@ -882,7 +882,7 @@ package lineageos.providers {
     field public static final java.lang.String STYLUS_ICON_ENABLED = "stylus_icon_enabled";
     field public static final java.lang.String SWAP_VOLUME_KEYS_ON_ROTATION = "swap_volume_keys_on_rotation";
     field public static final java.lang.String SYSTEM_PROFILES_ENABLED = "system_profiles_enabled";
-    field public static final java.lang.String SYS_PROP_LINEAGE_SETTING_VERSION = "sys.lineage_settings_system_version";
+    field public static final java.lang.String SYS_PROP_NENGGALA_SETTING_VERSION = "sys.lineage_settings_system_version";
     field public static final java.lang.String T9_SEARCH_INPUT_LOCALE = "t9_search_input_locale";
     field public static final java.lang.String TORCH_LONG_PRESS_POWER_GESTURE = "torch_long_press_power_gesture";
     field public static final java.lang.String TORCH_LONG_PRESS_POWER_TIMEOUT = "torch_long_press_power_timeout";

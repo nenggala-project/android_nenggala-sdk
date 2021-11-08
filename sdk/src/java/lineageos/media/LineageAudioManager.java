@@ -118,7 +118,7 @@ public final class LineageAudioManager {
         if (sService != null) {
             return sService;
         }
-        IBinder b = ServiceManager.getService(LineageContextConstants.LINEAGE_AUDIO_SERVICE);
+        IBinder b = ServiceManager.getService(LineageContextConstants.NENGGALA_AUDIO_SERVICE);
         if (b != null) {
             sService = ILineageAudioService.Stub.asInterface(b);
             return sService;

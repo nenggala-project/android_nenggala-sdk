@@ -64,7 +64,7 @@ public class LineageAudioService extends LineageSystemService {
                     "unavailable. Service will be unavailable.");
             return;
         }
-        publishBinderService(LineageContextConstants.LINEAGE_AUDIO_SERVICE, mBinder);
+        publishBinderService(LineageContextConstants.NENGGALA_AUDIO_SERVICE, mBinder);
     }
 
     @Override

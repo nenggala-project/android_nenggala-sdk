@@ -52,7 +52,7 @@ public class TrustInterfaceService extends LineageSystemService {
 
     private static final String PLATFORM_SECURITY_PATCHES = "ro.build.version.security_patch";
     private static final String VENDOR_SECURITY_PATCHES = "ro.vendor.build.security_patch";
-    private static final String LINEAGE_VENDOR_SECURITY_PATCHES =
+    private static final String NENGGALA_VENDOR_SECURITY_PATCHES =
             "ro.lineage.build.vendor_security_patch";
 
     private static final String INTENT_PARTS = "org.lineageos.lineageparts.TRUST_INTERFACE";
@@ -79,7 +79,7 @@ public class TrustInterfaceService extends LineageSystemService {
     @Override
     public void onStart() {
         if (mContext.getPackageManager().hasSystemFeature(LineageContextConstants.Features.TRUST)) {
-            publishBinderService(LineageContextConstants.LINEAGE_TRUST_INTERFACE, mService);
+            publishBinderService(LineageContextConstants.NENGGALA_TRUST_INTERFACE, mService);
         } else {
             Log.wtf(TAG, "Lineage Trust service started by system server but feature xml not" +
                     " declared. Not publishing binder service!");
@@ -267,7 +267,7 @@ public class TrustInterfaceService extends LineageSystemService {
         if (TextUtils.isEmpty(patchLevel)) {
             // Try to fallback to Lineage vendor prop
             if (VENDOR_SECURITY_PATCHES.equals(target)) {
-                    patchLevel = SystemProperties.get(LINEAGE_VENDOR_SECURITY_PATCHES);
+                    patchLevel = SystemProperties.get(NENGGALA_VENDOR_SECURITY_PATCHES);
                     if (TextUtils.isEmpty(patchLevel)) {
                         return TrustInterface.ERROR_UNDEFINED;
                     }

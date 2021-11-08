@@ -239,7 +239,7 @@ public final class LineageHardwareManager {
         if (sService != null) {
             return sService;
         }
-        IBinder b = ServiceManager.getService(LineageContextConstants.LINEAGE_HARDWARE_SERVICE);
+        IBinder b = ServiceManager.getService(LineageContextConstants.NENGGALA_HARDWARE_SERVICE);
         if (b != null) {
             sService = ILineageHardwareService.Stub.asInterface(b);
             return sService;

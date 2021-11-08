@@ -85,8 +85,8 @@ public class Intent {
      * Requires {@link lineageos.platform.Manifest.permission#HARDWARE_ABSTRACTION_ACCESS}.
      * @hide
      */
-    public static final String ACTION_INITIALIZE_LINEAGE_HARDWARE =
-            "lineageos.intent.action.INITIALIZE_LINEAGE_HARDWARE";
+    public static final String ACTION_INITIALIZE_NENGGALA_HARDWARE =
+            "lineageos.intent.action.INITIALIZE_NENGGALA_HARDWARE";
 
     /**
      * Broadcast action: lid state changed

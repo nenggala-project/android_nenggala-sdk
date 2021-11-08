@@ -153,11 +153,11 @@ public final class ConnectionSettings implements Parcelable {
         public static final int STATE_ENABLED = 1;
     }
 
-    private static final int LINEAGE_MODE_2G = 0;
-    private static final int LINEAGE_MODE_3G = 1;
-    private static final int LINEAGE_MODE_4G = 2;
-    private static final int LINEAGE_MODE_2G3G = 3;
-    private static final int LINEAGE_MODE_ALL = 4;
+    private static final int NENGGALA_MODE_2G = 0;
+    private static final int NENGGALA_MODE_3G = 1;
+    private static final int NENGGALA_MODE_4G = 2;
+    private static final int NENGGALA_MODE_2G3G = 3;
+    private static final int NENGGALA_MODE_ALL = 4;
 
     /** @hide */
     public static final Parcelable.Creator<ConnectionSettings> CREATOR =
@@ -299,7 +299,7 @@ public final class ConnectionSettings implements Parcelable {
                 }
                 break;
             case PROFILE_CONNECTION_2G3G4G:
-                if (Build.LINEAGE_VERSION.SDK_INT >= Build.LINEAGE_VERSION_CODES.ELDERBERRY) {
+                if (Build.NENGGALA_VERSION.SDK_INT >= Build.NENGGALA_VERSION_CODES.ELDERBERRY) {
                     Intent intent = new Intent(ACTION_MODIFY_NETWORK_MODE);
                     intent.putExtra(EXTRA_NETWORK_MODE, getValue());
                     intent.putExtra(EXTRA_SUB_ID, getSubId());
@@ -307,19 +307,19 @@ public final class ConnectionSettings implements Parcelable {
                 } else {
                     Intent intent = new Intent(ACTION_MODIFY_NETWORK_MODE);
                     switch(getValue()) {
-                        case LINEAGE_MODE_2G:
+                        case NENGGALA_MODE_2G:
                             intent.putExtra(EXTRA_NETWORK_MODE, RILConstants.NETWORK_MODE_GSM_ONLY);
                             break;
-                        case LINEAGE_MODE_3G:
+                        case NENGGALA_MODE_3G:
                             intent.putExtra(EXTRA_NETWORK_MODE, RILConstants.NETWORK_MODE_WCDMA_ONLY);
                             break;
-                        case LINEAGE_MODE_4G:
+                        case NENGGALA_MODE_4G:
                             intent.putExtra(EXTRA_NETWORK_MODE, RILConstants.NETWORK_MODE_LTE_ONLY);
                             break;
-                        case LINEAGE_MODE_2G3G:
+                        case NENGGALA_MODE_2G3G:
                             intent.putExtra(EXTRA_NETWORK_MODE, RILConstants.NETWORK_MODE_WCDMA_PREF);
                             break;
-                        case LINEAGE_MODE_ALL:
+                        case NENGGALA_MODE_ALL:
                             intent.putExtra(EXTRA_NETWORK_MODE,
                                     RILConstants.NETWORK_MODE_LTE_GSM_WCDMA);
                             break;
@@ -427,7 +427,7 @@ public final class ConnectionSettings implements Parcelable {
         builder.append("</value>\n<override>");
         builder.append(mOverride);
         builder.append("</override>\n");
-        if (Build.LINEAGE_VERSION.SDK_INT >= Build.LINEAGE_VERSION_CODES.ELDERBERRY) {
+        if (Build.NENGGALA_VERSION.SDK_INT >= Build.NENGGALA_VERSION_CODES.ELDERBERRY) {
             if (mConnectionId == PROFILE_CONNECTION_2G3G4G
                     && mSubId != SubscriptionManager.INVALID_SUBSCRIPTION_ID) {
                 builder.append("<subId>").append(mSubId).append("</subId>\n");
@@ -471,14 +471,14 @@ public final class ConnectionSettings implements Parcelable {
         // Pattern here is that all new members should be added to the end of
         // the writeToParcel method. Then we step through each version, until the latest
         // API release to help unravel this parcel
-        if (parcelableVersion >= Build.LINEAGE_VERSION_CODES.BOYSENBERRY) {
+        if (parcelableVersion >= Build.NENGGALA_VERSION_CODES.BOYSENBERRY) {
             mConnectionId = in.readInt();
             mOverride = in.readInt() != 0;
             mValue = in.readInt();
             mDirty = in.readInt() != 0;
         }
 
-        if (parcelableVersion >= Build.LINEAGE_VERSION_CODES.ELDERBERRY) {
+        if (parcelableVersion >= Build.NENGGALA_VERSION_CODES.ELDERBERRY) {
             if (mConnectionId == PROFILE_CONNECTION_2G3G4G) {
                 mSubId = in.readInt();
             }

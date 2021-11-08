@@ -146,7 +146,7 @@ public class LineageGlobalActionsService extends LineageSystemService {
 
     @Override
     public void onStart() {
-        publishBinderService(LineageContextConstants.LINEAGE_GLOBAL_ACTIONS_SERVICE, mBinder);
+        publishBinderService(LineageContextConstants.NENGGALA_GLOBAL_ACTIONS_SERVICE, mBinder);
     }
 
     @Override
