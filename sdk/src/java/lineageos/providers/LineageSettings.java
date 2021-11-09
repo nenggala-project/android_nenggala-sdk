@@ -484,10 +484,10 @@ public final class LineageSettings {
     public static final class System extends Settings.NameValueTable {
         public static final Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/system");
 
-        public static final String SYS_PROP_NENGGALA_SETTING_VERSION = "sys.lineage_settings_system_version";
+        public static final String SYS_PROP_LINEAGE_SETTING_VERSION = "sys.lineage_settings_system_version";
 
         private static final NameValueCache sNameValueCache = new NameValueCache(
-                SYS_PROP_NENGGALA_SETTING_VERSION,
+                SYS_PROP_LINEAGE_SETTING_VERSION,
                 CONTENT_URI,
                 CALL_METHOD_GET_SYSTEM,
                 CALL_METHOD_PUT_SYSTEM);
@@ -2461,10 +2461,10 @@ public final class LineageSettings {
     public static final class Secure extends Settings.NameValueTable {
         public static final Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/secure");
 
-        public static final String SYS_PROP_NENGGALA_SETTING_VERSION = "sys.lineage_settings_secure_version";
+        public static final String SYS_PROP_LINEAGE_SETTING_VERSION = "sys.lineage_settings_secure_version";
 
         private static final NameValueCache sNameValueCache = new NameValueCache(
-                SYS_PROP_NENGGALA_SETTING_VERSION,
+                SYS_PROP_LINEAGE_SETTING_VERSION,
                 CONTENT_URI,
                 CALL_METHOD_GET_SECURE,
                 CALL_METHOD_PUT_SECURE);
@@ -3148,7 +3148,7 @@ public final class LineageSettings {
          * @hide
          */
         @Deprecated
-        public static final String NENGGALA_SETUP_WIZARD_COMPLETED = "lineage_setup_wizard_completed";
+        public static final String LINEAGE_SETUP_WIZARD_COMPLETED = "lineage_setup_wizard_completed";
 
         /**
          * Whether lock screen bluring is enabled on devices that support this feature
@@ -3386,10 +3386,10 @@ public final class LineageSettings {
     public static final class Global extends Settings.NameValueTable {
         public static final Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/global");
 
-        public static final String SYS_PROP_NENGGALA_SETTING_VERSION = "sys.lineage_settings_global_version";
+        public static final String SYS_PROP_LINEAGE_SETTING_VERSION = "sys.lineage_settings_global_version";
 
         private static final NameValueCache sNameValueCache = new NameValueCache(
-                SYS_PROP_NENGGALA_SETTING_VERSION,
+                SYS_PROP_LINEAGE_SETTING_VERSION,
                 CONTENT_URI,
                 CALL_METHOD_GET_GLOBAL,
                 CALL_METHOD_PUT_GLOBAL);

@@ -111,7 +111,7 @@ public class LineageSettingsProviderDefaultsTest extends AndroidTestCase {
         super.setUp();
         mContentResolver = getContext().getContentResolver();
         mHasMigratedSettings = getContext().getSharedPreferences(LineageSettingsProvider.TAG,
-                Context.MODE_PRIVATE).getBoolean(LineageSettingsProvider.PREF_HAS_MIGRATED_NENGGALA_SETTINGS,
+                Context.MODE_PRIVATE).getBoolean(LineageSettingsProvider.PREF_HAS_MIGRATED_LINEAGE_SETTINGS,
                 false);
         mRemoteResources = getRemoteResources("org.lineageos.lineagesettings");
     }

@@ -265,7 +265,7 @@ public class ProfileManagerService extends LineageSystemService {
 
         if (mContext.getPackageManager().hasSystemFeature(
                 LineageContextConstants.Features.PROFILES)) {
-            publishBinderService(LineageContextConstants.NENGGALA_PROFILE_SERVICE, mService);
+            publishBinderService(LineageContextConstants.LINEAGE_PROFILE_SERVICE, mService);
         } else {
             Log.wtf(TAG, "Lineage profile service started by system server but feature xml not" +
                     " declared. Not publishing binder service!");

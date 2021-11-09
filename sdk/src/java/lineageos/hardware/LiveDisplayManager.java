@@ -181,7 +181,7 @@ public class LiveDisplayManager {
         if (sService != null) {
             return sService;
         }
-        IBinder b = ServiceManager.getService(LineageContextConstants.NENGGALA_LIVEDISPLAY_SERVICE);
+        IBinder b = ServiceManager.getService(LineageContextConstants.LINEAGE_LIVEDISPLAY_SERVICE);
         if (b != null) {
             sService = ILiveDisplayService.Stub.asInterface(b);
             return sService;

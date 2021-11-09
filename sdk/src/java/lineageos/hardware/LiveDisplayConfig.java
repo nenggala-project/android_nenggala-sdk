@@ -113,7 +113,7 @@ public class LiveDisplayConfig implements Parcelable {
         int maxColorBalance = 0;
         float[] paRanges = new float[10];
 
-        if (parcelableVersion >= Build.NENGGALA_VERSION_CODES.FIG) {
+        if (parcelableVersion >= Build.LINEAGE_VERSION_CODES.FIG) {
             capabilities = parcel.readLong();
             defaultMode = parcel.readInt();
             defaultDayTemperature = parcel.readInt();

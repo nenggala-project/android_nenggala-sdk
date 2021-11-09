@@ -109,8 +109,8 @@ LOCAL_DROIDDOC_OPTIONS:= \
         -referenceonly \
         -stubpackages $(lineage_stub_packages) \
         -exclude org.lineageos.platform.internal \
-        -api $(INTERNAL_NENGGALA_PLATFORM_API_FILE) \
-        -removedApi $(INTERNAL_NENGGALA_PLATFORM_REMOVED_API_FILE) \
+        -api $(INTERNAL_LINEAGE_PLATFORM_API_FILE) \
+        -removedApi $(INTERNAL_LINEAGE_PLATFORM_REMOVED_API_FILE) \
         -nodocs
 
 LOCAL_UNINSTALLABLE_MODULE := true
@@ -119,8 +119,8 @@ LOCAL_UNINSTALLABLE_MODULE := true
 
 # $(gen), i.e. framework.aidl, is also needed while building against the current stub.
 $(full_target): $(lineage_framework_built) $(gen)
-$(INTERNAL_NENGGALA_PLATFORM_API_FILE): $(full_target)
-$(call dist-for-goals,sdk,$(INTERNAL_NENGGALA_PLATFORM_API_FILE))
+$(INTERNAL_LINEAGE_PLATFORM_API_FILE): $(full_target)
+$(call dist-for-goals,sdk,$(INTERNAL_LINEAGE_PLATFORM_API_FILE))
 
 
 # Documentation
@@ -136,7 +136,7 @@ LOCAL_SRC_FILES := $(lineage_platform_docs_src_files)
 LOCAL_ADDITONAL_JAVA_DIR := $(lineage_platform_docs_LOCAL_ADDITIONAL_JAVA_DIR)
 
 LOCAL_IS_HOST_MODULE := false
-LOCAL_DROIDDOC_CUSTOM_TEMPLATE_DIR := vendor/lineage/build/tools/droiddoc/templates-lineage-sdk
+LOCAL_DROIDDOC_CUSTOM_TEMPLATE_DIR := vendor/nenggala/build/tools/droiddoc/templates-lineage-sdk
 LOCAL_ADDITIONAL_DEPENDENCIES := \
     services
 
@@ -151,15 +151,15 @@ LOCAL_DROIDDOC_OPTIONS := \
         -hdf sdk.version $(lineage_platform_docs_docs_SDK_VERSION) \
         -hdf sdk.rel.id $(lineage_platform_docs_docs_SDK_REL_ID) \
         -hdf sdk.preview 0 \
-        -since $(NENGGALA_SRC_API_DIR)/1.txt 1 \
-        -since $(NENGGALA_SRC_API_DIR)/2.txt 2 \
-        -since $(NENGGALA_SRC_API_DIR)/3.txt 3 \
-        -since $(NENGGALA_SRC_API_DIR)/4.txt 4 \
-        -since $(NENGGALA_SRC_API_DIR)/5.txt 5 \
-        -since $(NENGGALA_SRC_API_DIR)/6.txt 6 \
-        -since $(NENGGALA_SRC_API_DIR)/7.txt 7 \
-        -since $(NENGGALA_SRC_API_DIR)/8.txt 8 \
-        -since $(NENGGALA_SRC_API_DIR)/9.txt 9
+        -since $(LINEAGE_SRC_API_DIR)/1.txt 1 \
+        -since $(LINEAGE_SRC_API_DIR)/2.txt 2 \
+        -since $(LINEAGE_SRC_API_DIR)/3.txt 3 \
+        -since $(LINEAGE_SRC_API_DIR)/4.txt 4 \
+        -since $(LINEAGE_SRC_API_DIR)/5.txt 5 \
+        -since $(LINEAGE_SRC_API_DIR)/6.txt 6 \
+        -since $(LINEAGE_SRC_API_DIR)/7.txt 7 \
+        -since $(LINEAGE_SRC_API_DIR)/8.txt 8 \
+        -since $(LINEAGE_SRC_API_DIR)/9.txt 9
 
 $(full_target): $(lineage_framework_built) $(gen)
 #include $(BUILD_DROIDDOC)

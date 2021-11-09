@@ -72,12 +72,12 @@ public class LineageGlobalActions {
             return sService;
         }
         IBinder b = ServiceManager.getService(
-                LineageContextConstants.NENGGALA_GLOBAL_ACTIONS_SERVICE);
+                LineageContextConstants.LINEAGE_GLOBAL_ACTIONS_SERVICE);
         sService = ILineageGlobalActions.Stub.asInterface(b);
 
         if (sService == null) {
             throw new RemoteException("Couldn't get " +
-                    LineageContextConstants.NENGGALA_GLOBAL_ACTIONS_SERVICE +
+                    LineageContextConstants.LINEAGE_GLOBAL_ACTIONS_SERVICE +
                     " on binder");
         }
         return sService;

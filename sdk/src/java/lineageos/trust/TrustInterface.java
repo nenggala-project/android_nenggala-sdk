@@ -197,7 +197,7 @@ public class TrustInterface {
         if (sService != null) {
             return sService;
         }
-        IBinder b = ServiceManager.getService(LineageContextConstants.NENGGALA_TRUST_INTERFACE);
+        IBinder b = ServiceManager.getService(LineageContextConstants.LINEAGE_TRUST_INTERFACE);
         sService = ITrustInterface.Stub.asInterface(b);
 
         if (b == null) {

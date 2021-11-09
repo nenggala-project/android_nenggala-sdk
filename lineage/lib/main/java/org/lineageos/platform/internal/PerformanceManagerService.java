@@ -208,7 +208,7 @@ public class PerformanceManagerService extends LineageSystemService {
 
     @Override
     public void onStart() {
-        publishBinderService(LineageContextConstants.NENGGALA_PERFORMANCE_SERVICE, mBinder);
+        publishBinderService(LineageContextConstants.LINEAGE_PERFORMANCE_SERVICE, mBinder);
     }
 
     private void populateProfilesLocked() {

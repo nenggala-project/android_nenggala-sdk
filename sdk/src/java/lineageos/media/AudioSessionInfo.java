@@ -81,7 +81,7 @@ public final class AudioSessionInfo implements Parcelable {
         mChannelMask = in.readInt();
         mUid = in.readInt();
 
-        if (parcelableVersion > Build.NENGGALA_VERSION_CODES.FIG) {
+        if (parcelableVersion > Build.LINEAGE_VERSION_CODES.FIG) {
             // next-gen mind-altering shit goes here
         }
 

@@ -53,7 +53,7 @@ public class PerformanceProfile implements Parcelable, Comparable<PerformancePro
         mName = in.readString();
         mDescription = in.readString();
 
-        if (parcelableVersion >= Build.NENGGALA_VERSION_CODES.GUAVA) {
+        if (parcelableVersion >= Build.LINEAGE_VERSION_CODES.GUAVA) {
             // nothing yet
         }
 

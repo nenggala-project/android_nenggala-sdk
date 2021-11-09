@@ -18,7 +18,7 @@ package lineageos.os;
 
 import android.os.Parcel;
 
-import lineageos.os.Build.NENGGALA_VERSION_CODES;
+import lineageos.os.Build.LINEAGE_VERSION_CODES;
 
 /**
  * Simply, Concierge handles your parcels and makes sure they get marshalled and unmarshalled
@@ -61,10 +61,10 @@ public final class Concierge {
      * system for the parcels sent between the core framework and its sdk users.
      *
      * This parcelable version should be the latest version API version listed in
-     * {@link NENGGALA_VERSION_CODES}
+     * {@link LINEAGE_VERSION_CODES}
      * @hide
      */
-    public static final int PARCELABLE_VERSION = NENGGALA_VERSION_CODES.ILAMA;
+    public static final int PARCELABLE_VERSION = LINEAGE_VERSION_CODES.ILAMA;
 
     /**
      * Tell the concierge to receive our parcel, so we can get information from it.

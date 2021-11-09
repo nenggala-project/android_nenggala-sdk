@@ -227,7 +227,7 @@ public class LineageDatabaseHelper extends SQLiteOpenHelper{
         }
 
         if (upgradeVersion < 4) {
-            /* Was set LineageSettings.Secure.NENGGALA_SETUP_WIZARD_COMPLETE
+            /* Was set LineageSettings.Secure.LINEAGE_SETUP_WIZARD_COMPLETE
              * but this is no longer used
              */
             upgradeVersion = 4;
@@ -344,12 +344,12 @@ public class LineageDatabaseHelper extends SQLiteOpenHelper{
                     db.endTransaction();
                 }
 
-                // Remove NENGGALA_SETUP_WIZARD_COMPLETED
+                // Remove LINEAGE_SETUP_WIZARD_COMPLETED
                 db.beginTransaction();
                 stmt = null;
                 try {
                     stmt = db.compileStatement("DELETE FROM secure WHERE name=?");
-                    stmt.bindString(1, LineageSettings.Secure.NENGGALA_SETUP_WIZARD_COMPLETED);
+                    stmt.bindString(1, LineageSettings.Secure.LINEAGE_SETUP_WIZARD_COMPLETED);
                     stmt.execute();
                     db.setTransactionSuccessful();
                 } finally {

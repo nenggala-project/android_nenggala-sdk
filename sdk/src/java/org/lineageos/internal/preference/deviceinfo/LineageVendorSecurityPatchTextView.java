@@ -36,7 +36,7 @@ public class LineageVendorSecurityPatchTextView extends TextView {
     private static final String KEY_AOSP_VENDOR_SECURITY_PATCH =
             "ro.vendor.build.security_patch";
 
-    private static final String KEY_NENGGALA_VENDOR_SECURITY_PATCH =
+    private static final String KEY_LINEAGE_VENDOR_SECURITY_PATCH =
             "ro.lineage.build.vendor_security_patch";
 
     public LineageVendorSecurityPatchTextView(Context context, AttributeSet attrs) {
@@ -48,7 +48,7 @@ public class LineageVendorSecurityPatchTextView extends TextView {
         String patchLevel = SystemProperties.get(KEY_AOSP_VENDOR_SECURITY_PATCH);
 
         if (patchLevel.isEmpty()) {
-            patchLevel = SystemProperties.get(KEY_NENGGALA_VENDOR_SECURITY_PATCH);
+            patchLevel = SystemProperties.get(KEY_LINEAGE_VENDOR_SECURITY_PATCH);
         }
 
         if (!patchLevel.isEmpty()) {

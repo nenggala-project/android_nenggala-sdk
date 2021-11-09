@@ -42,7 +42,7 @@ public final class LineageContextConstants {
      *
      * @hide
      */
-    public static final String NENGGALA_PROFILE_SERVICE = "profile";
+    public static final String LINEAGE_PROFILE_SERVICE = "profile";
 
     /**
      * Use with {@link android.content.Context#getSystemService} to retrieve a
@@ -54,21 +54,21 @@ public final class LineageContextConstants {
      *
      * @hide
      */
-    public static final String NENGGALA_HARDWARE_SERVICE = "lineagehardware";
+    public static final String LINEAGE_HARDWARE_SERVICE = "lineagehardware";
 
     /**
      * Control device power profile and characteristics.
      *
      * @hide
      */
-    public static final String NENGGALA_PERFORMANCE_SERVICE = "lineageperformance";
+    public static final String LINEAGE_PERFORMANCE_SERVICE = "lineageperformance";
 
     /**
      * Manages composed icons
      *
      * @hide
      */
-    public static final String NENGGALA_ICON_CACHE_SERVICE = "lineageiconcache";
+    public static final String LINEAGE_ICON_CACHE_SERVICE = "lineageiconcache";
 
     /**
      * Use with {@link android.content.Context#getSystemService} to retrieve a
@@ -80,14 +80,14 @@ public final class LineageContextConstants {
      *
      * @hide
      */
-    public static final String NENGGALA_WEATHER_SERVICE = "lineageweather";
+    public static final String LINEAGE_WEATHER_SERVICE = "lineageweather";
 
     /**
      * Manages display color adjustments
      *
      * @hide
      */
-    public static final String NENGGALA_LIVEDISPLAY_SERVICE = "lineagelivedisplay";
+    public static final String LINEAGE_LIVEDISPLAY_SERVICE = "lineagelivedisplay";
 
 
     /**
@@ -95,7 +95,7 @@ public final class LineageContextConstants {
      *
      * @hide
      */
-    public static final String NENGGALA_AUDIO_SERVICE = "lineageaudio";
+    public static final String LINEAGE_AUDIO_SERVICE = "lineageaudio";
 
     /**
      * Use with {@link android.content.Context#getSystemService} to retrieve a
@@ -106,14 +106,14 @@ public final class LineageContextConstants {
      *
      * @hide
      */
-    public static final String NENGGALA_TRUST_INTERFACE = "lineagetrust";
+    public static final String LINEAGE_TRUST_INTERFACE = "lineagetrust";
 
     /**
      * Update power menu (GlobalActions)
      *
      * @hide
      */
-    public static final String NENGGALA_GLOBAL_ACTIONS_SERVICE = "lineageglobalactions";
+    public static final String LINEAGE_GLOBAL_ACTIONS_SERVICE = "lineageglobalactions";
 
     /**
      * Features supported by the Lineage SDK.

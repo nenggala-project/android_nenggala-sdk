@@ -227,7 +227,7 @@ public class LineageWeatherManagerService extends LineageSystemService {
 
     @Override
     public void onStart() {
-        publishBinderService(LineageContextConstants.NENGGALA_WEATHER_SERVICE, mService);
+        publishBinderService(LineageContextConstants.LINEAGE_WEATHER_SERVICE, mService);
         registerPackageMonitor();
         registerSettingsObserver();
     }

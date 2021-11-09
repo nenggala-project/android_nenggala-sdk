@@ -143,7 +143,7 @@ public class LiveDisplayService extends LineageSystemService {
 
     @Override
     public void onStart() {
-        publishBinderService(LineageContextConstants.NENGGALA_LIVEDISPLAY_SERVICE, mBinder);
+        publishBinderService(LineageContextConstants.LINEAGE_LIVEDISPLAY_SERVICE, mBinder);
     }
 
     @Override

@@ -268,12 +268,12 @@ public class ProfileManager {
         if (sService != null) {
             return sService;
         }
-        IBinder b = ServiceManager.getService(LineageContextConstants.NENGGALA_PROFILE_SERVICE);
+        IBinder b = ServiceManager.getService(LineageContextConstants.LINEAGE_PROFILE_SERVICE);
         sService = IProfileManager.Stub.asInterface(b);
 
         if (sService == null) {
             throw new RemoteException("Couldn't get " +
-                                      LineageContextConstants.NENGGALA_PROFILE_SERVICE +
+                                      LineageContextConstants.LINEAGE_PROFILE_SERVICE +
                                       " on binder");
         }
         return sService;
