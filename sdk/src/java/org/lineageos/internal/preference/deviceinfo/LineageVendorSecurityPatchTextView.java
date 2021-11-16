@@ -37,7 +37,7 @@ public class LineageVendorSecurityPatchTextView extends TextView {
             "ro.vendor.build.security_patch";
 
     private static final String KEY_LINEAGE_VENDOR_SECURITY_PATCH =
-            "ro.lineage.build.vendor_security_patch";
+            "ro.nenggala.build.vendor_security_patch";
 
     public LineageVendorSecurityPatchTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
