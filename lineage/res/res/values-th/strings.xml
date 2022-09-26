@@ -2,6 +2,7 @@
 <!--
      Copyright (C) 2015 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2021 The Nenggala Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -16,15 +17,15 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageos_system_label">ระบบ LineageOS</string>
+    <string name="lineageos_system_label">ระบบ Nenggala</string>
     <string name="permlab_modifyProfiles">ปรับแต่งโปรไฟล์ระบบ</string>
     <string name="permdesc_modifyProfiles">อนุญาตให้แอปปรับแต่งโปรไฟล์ระบบ</string>
     <string name="permlab_useHardwareFramework">ใช้ฮาร์ดแวร์เฟรมเวิร์ค</string>
-    <string name="permdesc_useHardwareFramework">อนุญาตให้แอปเข้าถึง Lineage ฮาร์ดแวร์เฟรมเวิร์ค</string>
-    <string name="permlab_writeSettings">ปรับเปลี่ยนการตั้งค่าระบบ Lineage</string>
-    <string name="permdesc_writeSettings">อนุญาตให้แอปปรับการตั้งค่าระบบ Lineage</string>
-    <string name="permlab_writeSecureSettings">ปรับแต่งการตั้งค่าระบบความปลอดภัยของ Lineage</string>
-    <string name="permdesc_writeSecureSettings">อนุญาตให้แอปปรับเปลี่ยนการตั้งค่าระบบรักษาความปลอดภัยของ Lineage ไม่ได้สำหรับการใช้แอปทั่วไป</string>
+    <string name="permdesc_useHardwareFramework">อนุญาตให้แอปเข้าถึง Nenggala ฮาร์ดแวร์เฟรมเวิร์ค</string>
+    <string name="permlab_writeSettings">ปรับเปลี่ยนการตั้งค่าระบบ Nenggala</string>
+    <string name="permdesc_writeSettings">อนุญาตให้แอปปรับการตั้งค่าระบบ Nenggala</string>
+    <string name="permlab_writeSecureSettings">ปรับแต่งการตั้งค่าระบบความปลอดภัยของ Nenggala</string>
+    <string name="permdesc_writeSecureSettings">อนุญาตให้แอปปรับเปลี่ยนการตั้งค่าระบบรักษาความปลอดภัยของ Nenggala ไม่ได้สำหรับการใช้แอปทั่วไป</string>
     <string name="permlab_protectedApp">เพิ่มและลบแอปจากแอปที่ได้รับการป้องกัน</string>
     <string name="permdesc_protectedApp">อนุญาคให้แอปทำเครื่องหมายว่าแอปอื่นได้รับการป้องกันและล็อคมันไว้</string>
     <string name="profileNameDefault">ค่าเริ่มต้น</string>
@@ -91,9 +92,9 @@
     <string name="permlab_manageRemotePrefs">จัดการการตั้งค่าระยะไกล</string>
     <string name="permdesc_manageRemotePrefs">อนุญาตให้แอปจัดการการตั้งค่าระยะไกล</string>
     <string name="build_date">วันที่สร้าง</string>
-    <string name="lineage_api_level">ระดับ API ของ LineageOS</string>
-    <string name="lineage_updates">อัพเดตระบบ LineageOS</string>
-    <string name="lineage_version">เวอร์ชั่น LineageOS</string>
+    <string name="lineage_api_level">ระดับ API ของ Nenggala</string>
+    <string name="lineage_updates">อัพเดตระบบ Nenggala</string>
+    <string name="lineage_version">เวอร์ชั่น Nenggala</string>
     <string name="lineage_vendor_security_patch">ระดับแพทช์ความปลอดภัย Vendor</string>
     <string name="unknown">ไม่รู้จัก</string>
     <string name="app_killed_message">แอปพลิเคชั่นถูกปิด</string>

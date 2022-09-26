@@ -89,10 +89,10 @@
     <!-- On-device lights (LED) capabilities -->
     <java-symbol type="integer" name="config_deviceLightCapabilities" />
 
-    <!-- External Lineage specific core services -->
+    <!-- External Nenggala specific core services -->
     <java-symbol type="array" name="config_externalLineageServices" />
 
-    <!-- Lineage system server -->
+    <!-- Nenggala system server -->
     <java-symbol type="string" name="config_externalSystemServer" />
 
     <!-- Device keyhandlers -->
