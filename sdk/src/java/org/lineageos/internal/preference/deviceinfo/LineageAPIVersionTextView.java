@@ -26,7 +26,7 @@ public class LineageAPIVersionTextView extends TextView {
     public LineageAPIVersionTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
 
-        final int sdk = lineageos.os.Build.LINEAGE_VERSION.SDK_INT;
+        final int sdk = lineageos.os.Build.NENGGALA_VERSION.SDK_INT;
         StringBuilder builder = new StringBuilder();
         builder.append(lineageos.os.Build.getNameForSDKInt(sdk))
                 .append(" (" + sdk + ")");

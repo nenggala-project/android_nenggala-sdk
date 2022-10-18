@@ -298,13 +298,13 @@ package lineageos.os {
     field public static final java.lang.String UNKNOWN = "unknown";
   }
 
-  public static class Build.LINEAGE_VERSION {
-    ctor public Build.LINEAGE_VERSION();
+  public static class Build.NENGGALA_VERSION {
+    ctor public Build.NENGGALA_VERSION();
     field public static final int SDK_INT;
   }
 
-  public static class Build.LINEAGE_VERSION_CODES {
-    ctor public Build.LINEAGE_VERSION_CODES();
+  public static class Build.NENGGALA_VERSION_CODES {
+    ctor public Build.NENGGALA_VERSION_CODES();
     field public static final int APRICOT = 1; // 0x1
     field public static final int BOYSENBERRY = 2; // 0x2
     field public static final int CANTALOUPE = 3; // 0x3
