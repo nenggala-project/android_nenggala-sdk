@@ -222,7 +222,7 @@ public final class Profile implements Parcelable, Comparable {
             // Pattern here is that all new members should be added to the end of
             // the writeToParcel method. Then we step through each version, until the latest
             // API release to help unravel this parcel
-            if (parcelableVersion >= Build.LINEAGE_VERSION_CODES.BOYSENBERRY) {
+            if (parcelableVersion >= Build.NENGGALA_VERSION_CODES.BOYSENBERRY) {
                 mType = in.readInt();
                 mId = in.readString();
                 mState = in.readInt();
@@ -631,7 +631,7 @@ public final class Profile implements Parcelable, Comparable {
         // Pattern here is that all new members should be added to the end of
         // the writeToParcel method. Then we step through each version, until the latest
         // API release to help unravel this parcel
-        if (parcelableVersion >= Build.LINEAGE_VERSION_CODES.BOYSENBERRY) {
+        if (parcelableVersion >= Build.NENGGALA_VERSION_CODES.BOYSENBERRY) {
             if (in.readInt() != 0) {
                 mName = in.readString();
             }
@@ -686,7 +686,7 @@ public final class Profile implements Parcelable, Comparable {
             }
             mDozeMode = in.readInt();
         }
-        if (parcelableVersion >= Build.LINEAGE_VERSION_CODES.ELDERBERRY) {
+        if (parcelableVersion >= Build.NENGGALA_VERSION_CODES.ELDERBERRY) {
             mNotificationLightMode = in.readInt();
             if (in.readInt() != 0) {
                 for (ConnectionSettings connection :
@@ -1161,7 +1161,7 @@ public final class Profile implements Parcelable, Comparable {
                 }
                 if (name.equals("connectionDescriptor")) {
                     ConnectionSettings cs = ConnectionSettings.fromXml(xpp, context);
-                    if (Build.LINEAGE_VERSION.SDK_INT >= Build.LINEAGE_VERSION_CODES.ELDERBERRY
+                    if (Build.NENGGALA_VERSION.SDK_INT >= Build.NENGGALA_VERSION_CODES.ELDERBERRY
                             && cs.getConnectionId() == ConnectionSettings.PROFILE_CONNECTION_2G3G4G) {
                         profile.networkConnectionSubIds.put(cs.getSubId(), cs);
                     } else {

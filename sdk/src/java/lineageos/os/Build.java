@@ -37,22 +37,22 @@ public class Build {
     static
     {
         sdkMap = new SparseArray<String>();
-        sdkMap.put(LINEAGE_VERSION_CODES.APRICOT, "Apricot");
-        sdkMap.put(LINEAGE_VERSION_CODES.BOYSENBERRY, "Boysenberry");
-        sdkMap.put(LINEAGE_VERSION_CODES.CANTALOUPE, "Cantaloupe");
-        sdkMap.put(LINEAGE_VERSION_CODES.DRAGON_FRUIT, "Dragon Fruit");
-        sdkMap.put(LINEAGE_VERSION_CODES.ELDERBERRY, "Elderberry");
-        sdkMap.put(LINEAGE_VERSION_CODES.FIG, "Fig");
-        sdkMap.put(LINEAGE_VERSION_CODES.GUAVA, "Guava");
-        sdkMap.put(LINEAGE_VERSION_CODES.HACKBERRY, "Hackberry");
-        sdkMap.put(LINEAGE_VERSION_CODES.ILAMA, "Ilama");
+        sdkMap.put(NENGGALA_VERSION_CODES.APRICOT, "Apricot");
+        sdkMap.put(NENGGALA_VERSION_CODES.BOYSENBERRY, "Boysenberry");
+        sdkMap.put(NENGGALA_VERSION_CODES.CANTALOUPE, "Cantaloupe");
+        sdkMap.put(NENGGALA_VERSION_CODES.DRAGON_FRUIT, "Dragon Fruit");
+        sdkMap.put(NENGGALA_VERSION_CODES.ELDERBERRY, "Elderberry");
+        sdkMap.put(NENGGALA_VERSION_CODES.FIG, "Fig");
+        sdkMap.put(NENGGALA_VERSION_CODES.GUAVA, "Guava");
+        sdkMap.put(NENGGALA_VERSION_CODES.HACKBERRY, "Hackberry");
+        sdkMap.put(NENGGALA_VERSION_CODES.ILAMA, "Ilama");
     }
 
     /** Various version strings. */
-    public static class LINEAGE_VERSION {
+    public static class NENGGALA_VERSION {
         /**
          * The user-visible SDK version of the framework; its possible
-         * values are defined in {@link Build.LINEAGE_VERSION_CODES}.
+         * values are defined in {@link Build.NENGGALA_VERSION_CODES}.
          *
          * Will return 0 if the device does not support the Lineage SDK.
          */
@@ -62,7 +62,7 @@ public class Build {
 
     /**
      * Enumeration of the currently known SDK version codes.  These are the
-     * values that can be found in {@link LINEAGE_VERSION#SDK_INT}.  Version numbers
+     * values that can be found in {@link NENGGALA_VERSION#SDK_INT}.  Version numbers
      * increment monotonically with each official platform release.
      *
      * To programmatically validate that a given API is available for use on the device,
@@ -73,7 +73,7 @@ public class Build {
      * <pre class="prettyprint">
      * private void removeActiveProfile() {
      *     Make sure we're running on BoysenBerry or higher to use Profiles API
-     *     if (Build.LINEAGE_VERSION.SDK_INT >= Build.LINEAGE_VERSION_CODES.BOYSENBERRY) {
+     *     if (Build.NENGGALA_VERSION.SDK_INT >= Build.NENGGALA_VERSION_CODES.BOYSENBERRY) {
      *         ProfileManager profileManager = ProfileManager.getInstance(this);
      *         Profile activeProfile = profileManager.getActiveProfile();
      *         if (activeProfile != null) {
@@ -83,7 +83,7 @@ public class Build {
      * }
      * </pre>
      */
-    public static class LINEAGE_VERSION_CODES {
+    public static class NENGGALA_VERSION_CODES {
         /**
          * June 2015: The first version of the platform sdk for CyanogenMod
          */
